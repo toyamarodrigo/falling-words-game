@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+input {
+  margin-top: 50px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+  background-color: lightblue;
+  height: 100vh;
+}
+
+.container-data {
+  display: flex;
+  justify-content: space-around;
+}
+
+#GameContent {
+  position: relative;
+  background-color: coral;
+  margin: 0 auto 0 auto;
+  height: 600px;
+  width: 100%;
+}
+
+.word {
+  position: absolute;
+  background-color: red;
+  padding: 0 10;
+  width: auto;
+  height: auto;
+  /* top: 90px; */
+  text-align: center;
+}
+
+.word p {
+  position: relative;
+  margin: 0;
+}
