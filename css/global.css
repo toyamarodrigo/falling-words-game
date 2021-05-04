@@ -28,6 +28,12 @@ p {
   margin-bottom: 0;
 }
 
+/*** Navbar ***/
+
+.navbar {
+  padding-top: 30px;
+}
+
 .nav-link,
 .navbar-brand {
   color: white;

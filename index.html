@@ -10,6 +10,8 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Falling Words - Rodrigo Toyama</title>
@@ -99,15 +101,22 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <audio src="./sound/menusound.mp3" id="MenuSound" type="audio/mp3"></audio>
+    <audio id="HomeSound" autoplay loop controls>
+      <source src="./sound/homesound.mp3" type="audio/mp3" />
+    </audio>
+    <script src="./sound-buttons.js"></script>
     <script>
+      // PASS THROUGH HTTP GET LEVEL SELECTED
       function buttonValue(btnID) {
         let params = new URLSearchParams();
         const btnValue = document.getElementById(btnID).value;
         params.append('lvl', btnValue);
         window.location.href = `game.html?${params.toString()}`;
       }
+      // DEFAULT VOLUME HOME SONG
+      let homeSound = document.getElementById('HomeSound');
+      homeSound.volume = 0.7;
     </script>
-    <audio src="./sound/menusound.mp3" id="MenuSound" type="audio/mp3" />
-    <script src="./sound.js"></script>
   </body>
 </html>

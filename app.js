@@ -180,9 +180,9 @@ function getWord() {
     arrWords.splice(indexWord, 1);
     arrWordsDiv.splice(indexWord, 1);
     wordDivIndex.parentNode.removeChild(wordDivIndex);
-    playSound(pointSound, 0);
+    playSound(pointSound, 0, notPointSound);
   } else {
-    playSound(notPointSound, 0);
+    playSound(notPointSound, 0, pointSound);
   }
 }
 
@@ -217,12 +217,22 @@ function updateScore() {
 // HELPERS
 // PLAY SOUND
 function playSound(sound, time, stopSound) {
-  console.log(stopSound)
-  stopSound.pause();
-  stopSound.currentTime = 0;
-  sound.pause();
-  sound.currentTime = time;
-  sound.play();
+  let playPromise = sound.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        stopSound.pause();
+        sound.pause();
+        stopSound.currentTime = 0;
+      })
+      .then(() => {
+        sound.currentTime = time;
+      })
+      .then(() => {
+        sound.play();
+      });
+  }
 }
 
 // SHOWS CURRENT PLAYING LEVEL
