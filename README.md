@@ -11,13 +11,14 @@ If it touches the <b>cyan line</b> . <b style="color: red">you lose</b>
 
 DEMO: https://rt-falling-words.netlify.app/
 
-## Game modes
+## Game difficulties
 
-It has 3 modes
+It has 3 difficulties
 
-* Easy = 1 word per 3000ms
-* Medium = 1 word per 2000ms
-* Hard = 1 word per 1000ms
+* Easy = 1 word per 3seg
+* Medium = 1 word per 2seg
+* Hard = 1 word per 1seg
+* Impossible = 1 word per 0.4seg
 
 ## Tech used
 

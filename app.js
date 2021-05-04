@@ -1,15 +1,15 @@
 // HTTP GET LEVEL FROM index.html
-let params = new URLSearchParams(window.location.search);
-let LEVEL = params.get('lvl');
+const params = new URLSearchParams(window.location.search);
+const LEVEL = params.get('lvl');
 
 // DOM ELEMENTS
-let buttonElementID = document.getElementById('StartButton');
-let gameContentID = document.getElementById('GameContent');
-let gameContentClass = document.getElementsByClassName('game-content');
-let inputElementID = document.getElementById('InputWord');
-let scoreElementID = document.getElementById('Score');
-let scoreElementClass = document.getElementsByClassName('score');
-let levelElementID = document.getElementById('Level');
+const buttonElementID = document.getElementById('StartButton');
+const gameContentID = document.getElementById('GameContent');
+const gameContentClass = document.getElementsByClassName('game-content');
+const inputElementID = document.getElementById('InputWord');
+const scoreElementID = document.getElementById('Score');
+const scoreElementClass = document.getElementsByClassName('score');
+const levelElementID = document.getElementById('Level');
 
 // VARIABLES
 const currentLevel = LEVEL;
@@ -18,7 +18,7 @@ let gameOver = false;
 let currentID = 0;
 let arrWords = [];
 let arrWordsDiv = [];
-let topVal;
+let topVal = 0;
 let gameWidth = gameContentID.clientWidth;
 let gameHeight = gameContentID.clientHeight;
 
@@ -36,18 +36,18 @@ pointSound.volume = 0.2;
 
 // DICTIONARY WORDS
 const DICTIONARY = [
-  'generate',
-  'review',
-  'cultivate',
-  'proud',
+  'school',
+  'college',
+  'courses',
+  'internet',
   'patience',
   'motivation',
-  'wriggle',
-  'ant',
-  'falsify',
-  'distribute',
-  'vague',
-  'pepper',
+  'tech',
+  'info',
+  'send',
+  'game',
+  'brusca',
+  'graphic',
   'copper',
   'lie',
   'case',
@@ -72,7 +72,6 @@ const DICTIONARY = [
   'assertive',
   'eaux',
   'admiration',
-  'TRUE',
   'recognize',
   'roll',
   'bank',
@@ -136,6 +135,11 @@ const DICTIONARY = [
   'standard',
   'appendix',
   'reluctance',
+  'gian',
+  'davinci',
+  'system',
+  'analyst',
+  'levi',
 ];
 
 // GAME START
@@ -151,7 +155,7 @@ function init() {
 
 // CREATE WORD, STORES IT IN AN ARRAY & STARTING POSITION WHERE IT FALLLS
 function drawWord() {
-  let word = generateRandomWord(DICTIONARY);
+  const word = generateRandomWord(DICTIONARY);
   arrWords.push(word);
   let wordDiv = document.createElement('div');
   wordDiv.innerHTML = `<p>${word}</p>`;
@@ -165,8 +169,7 @@ function drawWord() {
 
 // GET RANDOM WORD FROM DICTIONARY
 function generateRandomWord(words) {
-  var word = words[Math.floor(Math.random() * words.length)];
-  return word;
+  return words[Math.floor(Math.random() * words.length)];
 }
 
 // GET VALUE FROM INPUT
