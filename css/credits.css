@@ -1,0 +1,54 @@
+.main {
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 100px 0;
+  color: white;
+}
+
+.davinci-image {
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+}
+
+.btn-credit {
+  transition: all 0.5s;
+  margin: 0.3em 0 !important;
+  padding: 0 20px;
+}
+
+.btn-credit a {
+  color: black;
+}
+
+.btn-credit:hover,
+.btn-credit a:hover {
+  background-color: rgb(153, 44, 255);
+  border-radius: 0;
+  color: rgb(238, 255, 0) !important;
+  transform: translateY(-4px);
+}
+
+h1 {
+  background: -webkit-linear-gradient(rgb(217, 255, 1), rgb(5, 255, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+li:first-of-type {
+  color: greenyellow;
+}
+
+li {
+  margin: 0.8rem 0;
+}
+
+h5 {
+  margin: 0 !important;
+  padding: 0.5rem 0 !important;
+}
