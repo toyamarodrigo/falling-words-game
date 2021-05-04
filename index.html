@@ -117,13 +117,13 @@
     <script>
       // PASS THROUGH HTTP GET LEVEL SELECTED
       function buttonValue(btnID) {
-        let params = new URLSearchParams();
+        const params = new URLSearchParams();
         const btnValue = document.getElementById(btnID).value;
         params.append('lvl', btnValue);
         window.location.href = `game.html?${params.toString()}`;
       }
       // DEFAULT VOLUME HOME SONG
-      let homeSound = document.getElementById('HomeSound');
+      const homeSound = document.getElementById('HomeSound');
       homeSound.volume = 0.7;
     </script>
   </body>

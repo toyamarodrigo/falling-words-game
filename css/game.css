@@ -26,7 +26,8 @@ h6 {
   justify-content: space-around;
   padding: 5px 0;
   background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 #GameContent {
@@ -57,7 +58,8 @@ h6 {
   flex-direction: column;
   padding: 40px 30px;
   background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 input {
