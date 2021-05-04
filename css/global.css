@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: min-content;
   height: 100vh;
   width: 100vw;
 }
