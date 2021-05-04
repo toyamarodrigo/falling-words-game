@@ -13,14 +13,13 @@ const levelElementID = document.getElementById('Level');
 
 // VARIABLES
 const currentLevel = LEVEL;
+const gameWidth = gameContentID.clientWidth;
+const gameHeight = gameContentID.clientHeight;
 let score = 0;
 let gameOver = false;
-let currentID = 0;
 let arrWords = [];
 let arrWordsDiv = [];
 let topVal = 0;
-let gameWidth = gameContentID.clientWidth;
-let gameHeight = gameContentID.clientHeight;
 
 // SOUNDS
 const startGameSound = document.getElementById('StartGameSound');
@@ -28,7 +27,7 @@ const gameoverSound = document.getElementById('GameoverSound');
 const pointSound = document.getElementById('PointSound');
 const notPointSound = document.getElementById('NotPointSound');
 
-// DEFAULT VOLUME
+// DEFAULT VOLUME (was too high)
 startGameSound.style.zIndex = 1;
 startGameSound.volume = 0.5;
 gameoverSound.volume = 0.5;
@@ -153,7 +152,7 @@ function init() {
   updateWordPosition();
 }
 
-// CREATE WORD, STORES IT IN AN ARRAY & STARTING POSITION WHERE IT FALLLS
+// CREATE WORD, STORES IT IN AN ARRAY & GET POSITION WHERE IT STARTS TO FALLLS
 function drawWord() {
   const word = generateRandomWord(DICTIONARY);
   arrWords.push(word);
