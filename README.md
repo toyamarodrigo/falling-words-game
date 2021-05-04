@@ -9,6 +9,8 @@
 If it touches the <b>cyan line</b> . <b style="color: red">you lose</b>
 </p>
 
+DEMO: https://rt-falling-words.netlify.app/
+
 ## Game modes
 
 It has 3 modes
