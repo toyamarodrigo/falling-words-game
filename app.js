@@ -81,7 +81,6 @@ const DICTIONARY = [
   'slam',
   'grandmother',
   'assertive',
-  'honorificabilitudinitatibus',
   'eaux',
   'javascript',
   'admiration',
