@@ -39,16 +39,18 @@ It has 3 difficulties
 
 ### Home
 
-![Home](https://i.imgur.com/ST4ayWT.jpeg)
+![Home](https://i.imgur.com/WPaSPiJ.jpg)
 
 ### How to play
 
-![Howtoplay](https://i.imgur.com/AYrA6ae.jpeg)
+![Howtoplay](https://i.imgur.com/OJP6uYJ.jpg)
 
 ### Game
 
 ![Game](https://i.imgur.com/hYaztZu.jpg)
 
+![Gameover](https://i.imgur.com/cWtmBoR.jpg)
+
 ### Credits
 
-![Credits](https://i.imgur.com/0rGwmFT.jpeg)
+![Credits](https://i.imgur.com/6wfyAyu.jpg)
